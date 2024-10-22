@@ -1,0 +1,126 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: "[Diego Viana]"
+paginate: 5
+theme: ["PaperMod"]
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["posts", "papermod"]
+
+minify:
+  disableXML: true
+  # minifyOutput: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Academic
+          url: academic
+          weight: 5
+        - name: Search
+          url: search/
+          weight: 10
+
+    params:
+      languageAltTitle: Portugues
+      profileMode:
+        enabled: true
+        title: Diego Viana
+        imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fb_200d_1f4bb.svg"
+        imageTitle: ProfileMode image
+        # imageWidth: 120
+        # imageHeight: 120
+        subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+        buttons:
+          - name: Blog
+            url: posts
+          - name: Profile Mode
+            url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
+
+
+      
+       
+
+Params:
+  homeInfoParams:
+    Title: Hello, i´m Diego Viana! 
+    Content: I am a dual-degree professional in Architecture and Systems Analysis, specializing in the integration of advanced technological concepts into architectural projects. My experience spans automation and machine learning, with a focus on optimizing construction processes and developing tailored solutions for complex challenges. Currently, I am exploring the fields of affective computing and machine learning, applying these technologies to create safer and more inclusive environments.
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: true
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+
+
+
+  socialIcons:
+  - name: github
+    url: 'https://github.com/dvgba'
+  - name: medium
+    url: 'https://medium.com/@diegovianagomes'
+  - name: linkedin
+    url: 'https://www.linkedin.com/in/diegovianagomes/'
+  - name: youtube
+    url: 'https://www.youtube.com/arquitetodiegoviana'
+  - name: twitter
+    url: 'https://twitter.com/drlegobox'
+  - name: instagram
+    url: 'https://www.instagram.com/diegovianagomes'
+  - name: behance
+    url: 'https://bento.me/[Seu nome]'
+
+  assets:
+    disableHLJS: true # to disable highlight.js
+    disableFingerprinting: true
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    safari_pinned_tab: "/favicon-16x16.png"
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+  
+
+  # For search: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#search-page
+  outputs:
+    home:
+      - HTML
+      - RSS
+      - JSON # is necessary
